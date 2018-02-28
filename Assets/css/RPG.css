@@ -1,0 +1,29 @@
+h1 {
+    color:yellow;
+    font-size: 40px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color:grey;
+    border: 1px solid red;
+    float: left;
+    margin-bottom: 100px;
+}
+
+#yourCharacterText {
+    color: white;
+    font-size: 22px;
+    clear: both;
+}
+
+.text {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
