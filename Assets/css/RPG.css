@@ -27,3 +27,6 @@ h1 {
     clear: both;
 }
 
+h2, p {
+    text-align: center;
+}

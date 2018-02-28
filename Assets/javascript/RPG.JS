@@ -1,16 +1,23 @@
 
 $(document).ready(function () {
 
-    //if the Your Character Div is Empty then append the box clicked to it and append all other boxes to the Your Enemies Div 
+    //if character div is empty then append the clicked box to it and append all other boxes to the enemies div 
+
+    var obiHealth = 120;
+    var lukeHealth = 100;
+    var sidiusHealth = 150;
+    var maulHealth = 180;
 
     $(".obi").on("click", function () {
+        //if character div is empty
         if (!$('#yourCharacterDiv').html().length) {
             $("#yourCharacterDiv").append($(".obi"))
             $(".obi").css({ 'float': 'none' });
             $("#yourEnemiesDiv").append($(".luke, .sidius, .maul"))
             $("#bottom").css({ 'clear': 'both' })
             $(".luke, .sidius, .maul").css("background-color", "red")
-        } else {
+        //if character div has an element inside 
+        } else if ($('#yourCharacterDiv').html().length) {
             $("#defenderDiv").append($(".obi"))
             $(".obi").css({ 'float': 'none' })
             $(".obi").css("background-color", "black")
@@ -62,6 +69,13 @@ $(document).ready(function () {
             $(".maul").css("color", "white")
         }
     })
+
+    $("button").on("click", function () {
+        if($('#defenderDiv').html().length) {
+
+        }
+    })
+    
 });
 
 
