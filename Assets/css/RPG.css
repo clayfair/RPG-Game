@@ -7,9 +7,8 @@ h1 {
     width: 150px;
     height: 150px;
     background-color:grey;
-    border: 1px solid red;
+    border: 1px solid greenyellow;
     float: left;
-    margin-bottom: 100px;
 }
 
 #yourCharacterText {
@@ -21,9 +20,10 @@ h1 {
 .text {
     color: white;
     font-size: 22px;
-    margin-bottom: 10px;
 }
 
-button {
-    margin-bottom: 10px;
+
+.bottom {
+    clear: both;
 }
+
